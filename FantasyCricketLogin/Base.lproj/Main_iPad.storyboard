@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="CHE-sE-ecv">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="IU7-Ha-WH7">
+            <objects>
+                <viewController id="CHE-sE-ecv" customClass="FC_FBLoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YMw-j5-bGK"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xm7-nL-XXI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="igO-GO-oMa">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pk0-oj-Vmu">
+                                <rect key="frame" x="294" y="976" width="180" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="FmQ-v4-KXl"/>
+                                    <constraint firstAttribute="height" constant="40" id="sr9-It-Sgr"/>
+                                </constraints>
+                                <state key="normal" title="Login With Facebook">
+                                    <color key="titleColor" red="0.02745098248" green="0.95686280729999995" blue="0.1294117719" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" red="0.34777794699999998" green="1" blue="0.31760224640000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="fbLogin:" destination="CHE-sE-ecv" eventType="touchUpInside" id="kLc-di-PFQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fantasy Cricket League" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ag-TL-vs3">
+                                <rect key="frame" x="274" y="28" width="220" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ml5-Jw-drM"/>
+                                    <constraint firstAttribute="width" constant="220" id="vQi-s2-tlL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.34777794699999998" green="1" blue="0.31760224640000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVo-4l-nkP">
+                                <rect key="frame" x="354" y="938" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="cxQ-a8-THj"/>
+                                    <constraint firstAttribute="height" constant="30" id="tXv-Ks-YKV"/>
+                                </constraints>
+                                <state key="normal" title="Fetch">
+                                    <color key="titleColor" red="0.02745098248" green="0.95686280729999995" blue="0.1294117719" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="fetch:" destination="CHE-sE-ecv" eventType="touchUpInside" id="rDY-Fb-QBx"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.69999998807907104" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="2j3-rE-iKL">
+                                <rect key="frame" x="366" y="493" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="37" id="C8X-OE-eb6"/>
+                                    <constraint firstAttribute="height" constant="37" id="obv-9F-n0b"/>
+                                </constraints>
+                                <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUd-v9-3G9">
+                                <rect key="frame" x="688" y="938" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="bvz-H8-sEt"/>
+                                    <constraint firstAttribute="height" constant="30" id="gFl-zS-hEC"/>
+                                </constraints>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" red="0.34777794699999998" green="1" blue="0.31760224640000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logout:" destination="CHE-sE-ecv" eventType="touchUpInside" id="dbk-QI-lLV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1ag-TL-vs3" firstAttribute="top" secondItem="YMw-j5-bGK" secondAttribute="bottom" constant="20" symbolic="YES" id="58K-oH-nWq"/>
+                            <constraint firstItem="Pk0-oj-Vmu" firstAttribute="top" secondItem="aVo-4l-nkP" secondAttribute="bottom" constant="8" symbolic="YES" id="8b6-tm-6ux"/>
+                            <constraint firstItem="Xm7-nL-XXI" firstAttribute="top" secondItem="Pk0-oj-Vmu" secondAttribute="bottom" constant="20" symbolic="YES" id="8za-PX-nko"/>
+                            <constraint firstAttribute="trailing" secondItem="NUd-v9-3G9" secondAttribute="trailing" constant="20" symbolic="YES" id="JTW-wK-lX7"/>
+                            <constraint firstAttribute="centerX" secondItem="2j3-rE-iKL" secondAttribute="centerX" id="JUC-tv-gJj"/>
+                            <constraint firstAttribute="centerX" secondItem="Pk0-oj-Vmu" secondAttribute="centerX" id="VHA-lB-KiE"/>
+                            <constraint firstAttribute="centerX" secondItem="aVo-4l-nkP" secondAttribute="centerX" id="dFM-g9-MDw"/>
+                            <constraint firstAttribute="centerX" secondItem="1ag-TL-vs3" secondAttribute="centerX" id="dYG-rj-FBn"/>
+                            <constraint firstItem="aVo-4l-nkP" firstAttribute="baseline" secondItem="NUd-v9-3G9" secondAttribute="baseline" id="guL-Oa-ICA"/>
+                            <constraint firstAttribute="centerY" secondItem="2j3-rE-iKL" secondAttribute="centerY" id="wOO-Ms-wWq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activity" destination="2j3-rE-iKL" id="Umk-nv-ogX"/>
+                        <outlet property="fbLoginButton" destination="Pk0-oj-Vmu" id="XaN-cL-rIj"/>
+                        <outlet property="fetchButton" destination="aVo-4l-nkP" id="BTt-LY-TSL"/>
+                        <outlet property="logoutButton" destination="NUd-v9-3G9" id="GuV-v2-8mo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cA9-ZC-hGm" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="657" y="-4"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackOpaque"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

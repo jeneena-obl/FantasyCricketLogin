@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D0291AB18AF9908009BF3BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D0291AA18AF9908009BF3BF /* Foundation.framework */; };
+		5D0291AD18AF9908009BF3BF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D0291AC18AF9908009BF3BF /* CoreGraphics.framework */; };
+		5D0291AF18AF9908009BF3BF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D0291AE18AF9908009BF3BF /* UIKit.framework */; };
+		5D0291B518AF9908009BF3BF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D0291B318AF9908009BF3BF /* InfoPlist.strings */; };
+		5D0291B718AF9908009BF3BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0291B618AF9908009BF3BF /* main.m */; };
+		5D0291BB18AF9908009BF3BF /* FC_FBLoginAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0291BA18AF9908009BF3BF /* FC_FBLoginAppDelegate.m */; };
+		5D0291BE18AF9908009BF3BF /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D0291BC18AF9908009BF3BF /* Main_iPhone.storyboard */; };
+		5D0291C118AF9908009BF3BF /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D0291BF18AF9908009BF3BF /* Main_iPad.storyboard */; };
+		5D0291C618AF9908009BF3BF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D0291C518AF9908009BF3BF /* Images.xcassets */; };
+		5D0291CD18AF9908009BF3BF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D0291CC18AF9908009BF3BF /* XCTest.framework */; };
+		5D0291CE18AF9908009BF3BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D0291AA18AF9908009BF3BF /* Foundation.framework */; };
+		5D0291CF18AF9908009BF3BF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D0291AE18AF9908009BF3BF /* UIKit.framework */; };
+		5D0291D718AF9908009BF3BF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D0291D518AF9908009BF3BF /* InfoPlist.strings */; };
+		5D0291D918AF9908009BF3BF /* FantasyCricketLoginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0291D818AF9908009BF3BF /* FantasyCricketLoginTests.m */; };
+		5D0291F818AF9D2B009BF3BF /* OBLFacebookFriend.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0291E518AF9D2B009BF3BF /* OBLFacebookFriend.m */; };
+		5D0291FA18AF9D2B009BF3BF /* OBLFacebookPermission.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0291E918AF9D2B009BF3BF /* OBLFacebookPermission.m */; };
+		5D0291FB18AF9D2B009BF3BF /* OBLFacebookPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0291EB18AF9D2B009BF3BF /* OBLFacebookPost.m */; };
+		5D0291FC18AF9D2B009BF3BF /* OBLFacebookQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0291ED18AF9D2B009BF3BF /* OBLFacebookQuery.m */; };
+		5D0291FD18AF9D2B009BF3BF /* OBLFacebookUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0291EF18AF9D2B009BF3BF /* OBLFacebookUser.m */; };
+		5D0291FE18AF9D2B009BF3BF /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D0291F018AF9D2B009BF3BF /* FacebookSDK.framework */; };
+		5D0291FF18AF9D2B009BF3BF /* OBLLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0291F718AF9D2B009BF3BF /* OBLLog.m */; };
+		5D2FA80B18B20CCB00DDAD5A /* OBLFacebookLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D2FA80A18B20CCB00DDAD5A /* OBLFacebookLogin.m */; };
+		5D2FA80F18B2202000DDAD5A /* FC_User.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D2FA80E18B2202000DDAD5A /* FC_User.m */; };
+		5D8AE37318B33034005C1C0F /* FC_FBLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D8AE37218B33034005C1C0F /* FC_FBLoginViewController.m */; };
+		5D8AE37C18B33225005C1C0F /* FC_LiveScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D8AE37B18B33225005C1C0F /* FC_LiveScoreViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5D0291D018AF9908009BF3BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D02919F18AF9908009BF3BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D0291A618AF9908009BF3BF;
+			remoteInfo = FantasyCricketLogin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5D0291A718AF9908009BF3BF /* FantasyCricketLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FantasyCricketLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D0291AA18AF9908009BF3BF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5D0291AC18AF9908009BF3BF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5D0291AE18AF9908009BF3BF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5D0291B218AF9908009BF3BF /* FantasyCricketLogin-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FantasyCricketLogin-Info.plist"; sourceTree = "<group>"; };
+		5D0291B418AF9908009BF3BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5D0291B618AF9908009BF3BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5D0291B818AF9908009BF3BF /* FantasyCricketLogin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FantasyCricketLogin-Prefix.pch"; sourceTree = "<group>"; };
+		5D0291B918AF9908009BF3BF /* FC_FBLoginAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FC_FBLoginAppDelegate.h; sourceTree = "<group>"; };
+		5D0291BA18AF9908009BF3BF /* FC_FBLoginAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FC_FBLoginAppDelegate.m; sourceTree = "<group>"; };
+		5D0291BD18AF9908009BF3BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		5D0291C018AF9908009BF3BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		5D0291C518AF9908009BF3BF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5D0291CB18AF9908009BF3BF /* FantasyCricketLoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FantasyCricketLoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D0291CC18AF9908009BF3BF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5D0291D418AF9908009BF3BF /* FantasyCricketLoginTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FantasyCricketLoginTests-Info.plist"; sourceTree = "<group>"; };
+		5D0291D618AF9908009BF3BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5D0291D818AF9908009BF3BF /* FantasyCricketLoginTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FantasyCricketLoginTests.m; sourceTree = "<group>"; };
+		5D0291E418AF9D2B009BF3BF /* OBLFacebookFriend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBLFacebookFriend.h; sourceTree = "<group>"; };
+		5D0291E518AF9D2B009BF3BF /* OBLFacebookFriend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBLFacebookFriend.m; sourceTree = "<group>"; };
+		5D0291E618AF9D2B009BF3BF /* OBLFacebookLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBLFacebookLogin.h; sourceTree = "<group>"; };
+		5D0291E818AF9D2B009BF3BF /* OBLFacebookPermission.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBLFacebookPermission.h; sourceTree = "<group>"; };
+		5D0291E918AF9D2B009BF3BF /* OBLFacebookPermission.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBLFacebookPermission.m; sourceTree = "<group>"; };
+		5D0291EA18AF9D2B009BF3BF /* OBLFacebookPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBLFacebookPost.h; sourceTree = "<group>"; };
+		5D0291EB18AF9D2B009BF3BF /* OBLFacebookPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBLFacebookPost.m; sourceTree = "<group>"; };
+		5D0291EC18AF9D2B009BF3BF /* OBLFacebookQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBLFacebookQuery.h; sourceTree = "<group>"; };
+		5D0291ED18AF9D2B009BF3BF /* OBLFacebookQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBLFacebookQuery.m; sourceTree = "<group>"; };
+		5D0291EE18AF9D2B009BF3BF /* OBLFacebookUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBLFacebookUser.h; sourceTree = "<group>"; };
+		5D0291EF18AF9D2B009BF3BF /* OBLFacebookUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBLFacebookUser.m; sourceTree = "<group>"; };
+		5D0291F018AF9D2B009BF3BF /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../FacebookSDK.framework; sourceTree = "<group>"; };
+		5D0291F218AF9D2B009BF3BF /* OBLLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBLLogin.h; sourceTree = "<group>"; };
+		5D0291F318AF9D2B009BF3BF /* OBLPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBLPost.h; sourceTree = "<group>"; };
+		5D0291F418AF9D2B009BF3BF /* OBLProfileDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBLProfileDetails.h; sourceTree = "<group>"; };
+		5D0291F618AF9D2B009BF3BF /* OBLLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBLLog.h; sourceTree = "<group>"; };
+		5D0291F718AF9D2B009BF3BF /* OBLLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBLLog.m; sourceTree = "<group>"; };
+		5D2FA80A18B20CCB00DDAD5A /* OBLFacebookLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBLFacebookLogin.m; sourceTree = "<group>"; };
+		5D2FA80D18B2202000DDAD5A /* FC_User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FC_User.h; sourceTree = "<group>"; };
+		5D2FA80E18B2202000DDAD5A /* FC_User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FC_User.m; sourceTree = "<group>"; };
+		5D8AE37118B33034005C1C0F /* FC_FBLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FC_FBLoginViewController.h; sourceTree = "<group>"; };
+		5D8AE37218B33034005C1C0F /* FC_FBLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FC_FBLoginViewController.m; sourceTree = "<group>"; };
+		5D8AE37A18B33225005C1C0F /* FC_LiveScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FC_LiveScoreViewController.h; sourceTree = "<group>"; };
+		5D8AE37B18B33225005C1C0F /* FC_LiveScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FC_LiveScoreViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D0291A418AF9908009BF3BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D0291AD18AF9908009BF3BF /* CoreGraphics.framework in Frameworks */,
+				5D0291FE18AF9D2B009BF3BF /* FacebookSDK.framework in Frameworks */,
+				5D0291AF18AF9908009BF3BF /* UIKit.framework in Frameworks */,
+				5D0291AB18AF9908009BF3BF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D0291C818AF9908009BF3BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D0291CD18AF9908009BF3BF /* XCTest.framework in Frameworks */,
+				5D0291CF18AF9908009BF3BF /* UIKit.framework in Frameworks */,
+				5D0291CE18AF9908009BF3BF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D02919E18AF9908009BF3BF = {
+			isa = PBXGroup;
+			children = (
+				5D0291B018AF9908009BF3BF /* FantasyCricketLogin */,
+				5D0291E218AF9D2B009BF3BF /* Library */,
+				5D0291D218AF9908009BF3BF /* FantasyCricketLoginTests */,
+				5D0291A918AF9908009BF3BF /* Frameworks */,
+				5D0291A818AF9908009BF3BF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5D0291A818AF9908009BF3BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D0291A718AF9908009BF3BF /* FantasyCricketLogin.app */,
+				5D0291CB18AF9908009BF3BF /* FantasyCricketLoginTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5D0291A918AF9908009BF3BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D0291AA18AF9908009BF3BF /* Foundation.framework */,
+				5D0291AC18AF9908009BF3BF /* CoreGraphics.framework */,
+				5D0291AE18AF9908009BF3BF /* UIKit.framework */,
+				5D0291CC18AF9908009BF3BF /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5D0291B018AF9908009BF3BF /* FantasyCricketLogin */ = {
+			isa = PBXGroup;
+			children = (
+				5D0291B918AF9908009BF3BF /* FC_FBLoginAppDelegate.h */,
+				5D0291BA18AF9908009BF3BF /* FC_FBLoginAppDelegate.m */,
+				5D0291BC18AF9908009BF3BF /* Main_iPhone.storyboard */,
+				5D0291BF18AF9908009BF3BF /* Main_iPad.storyboard */,
+				5D0291C518AF9908009BF3BF /* Images.xcassets */,
+				5D8AE37018B33034005C1C0F /* Controller */,
+				5D2FA80C18B21F8100DDAD5A /* Model */,
+				5D0291B118AF9908009BF3BF /* Supporting Files */,
+			);
+			path = FantasyCricketLogin;
+			sourceTree = "<group>";
+		};
+		5D0291B118AF9908009BF3BF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D0291B218AF9908009BF3BF /* FantasyCricketLogin-Info.plist */,
+				5D0291B318AF9908009BF3BF /* InfoPlist.strings */,
+				5D0291B618AF9908009BF3BF /* main.m */,
+				5D0291B818AF9908009BF3BF /* FantasyCricketLogin-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5D0291D218AF9908009BF3BF /* FantasyCricketLoginTests */ = {
+			isa = PBXGroup;
+			children = (
+				5D0291D818AF9908009BF3BF /* FantasyCricketLoginTests.m */,
+				5D0291D318AF9908009BF3BF /* Supporting Files */,
+			);
+			path = FantasyCricketLoginTests;
+			sourceTree = "<group>";
+		};
+		5D0291D318AF9908009BF3BF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D0291D418AF9908009BF3BF /* FantasyCricketLoginTests-Info.plist */,
+				5D0291D518AF9908009BF3BF /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5D0291E218AF9D2B009BF3BF /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				5D0291E318AF9D2B009BF3BF /* FacebookLibrary */,
+				5D0291F118AF9D2B009BF3BF /* Protocol */,
+				5D0291F518AF9D2B009BF3BF /* Utility */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		5D0291E318AF9D2B009BF3BF /* FacebookLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				5D0291E418AF9D2B009BF3BF /* OBLFacebookFriend.h */,
+				5D0291E518AF9D2B009BF3BF /* OBLFacebookFriend.m */,
+				5D0291E618AF9D2B009BF3BF /* OBLFacebookLogin.h */,
+				5D2FA80A18B20CCB00DDAD5A /* OBLFacebookLogin.m */,
+				5D0291E818AF9D2B009BF3BF /* OBLFacebookPermission.h */,
+				5D0291E918AF9D2B009BF3BF /* OBLFacebookPermission.m */,
+				5D0291EA18AF9D2B009BF3BF /* OBLFacebookPost.h */,
+				5D0291EB18AF9D2B009BF3BF /* OBLFacebookPost.m */,
+				5D0291EC18AF9D2B009BF3BF /* OBLFacebookQuery.h */,
+				5D0291ED18AF9D2B009BF3BF /* OBLFacebookQuery.m */,
+				5D0291EE18AF9D2B009BF3BF /* OBLFacebookUser.h */,
+				5D0291EF18AF9D2B009BF3BF /* OBLFacebookUser.m */,
+				5D0291F018AF9D2B009BF3BF /* FacebookSDK.framework */,
+			);
+			path = FacebookLibrary;
+			sourceTree = "<group>";
+		};
+		5D0291F118AF9D2B009BF3BF /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				5D0291F218AF9D2B009BF3BF /* OBLLogin.h */,
+				5D0291F318AF9D2B009BF3BF /* OBLPost.h */,
+				5D0291F418AF9D2B009BF3BF /* OBLProfileDetails.h */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		5D0291F518AF9D2B009BF3BF /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				5D0291F618AF9D2B009BF3BF /* OBLLog.h */,
+				5D0291F718AF9D2B009BF3BF /* OBLLog.m */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		5D2FA80C18B21F8100DDAD5A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5D2FA80D18B2202000DDAD5A /* FC_User.h */,
+				5D2FA80E18B2202000DDAD5A /* FC_User.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5D8AE37018B33034005C1C0F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5D8AE37A18B33225005C1C0F /* FC_LiveScoreViewController.h */,
+				5D8AE37B18B33225005C1C0F /* FC_LiveScoreViewController.m */,
+				5D8AE37118B33034005C1C0F /* FC_FBLoginViewController.h */,
+				5D8AE37218B33034005C1C0F /* FC_FBLoginViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5D0291A618AF9908009BF3BF /* FantasyCricketLogin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D0291DC18AF9908009BF3BF /* Build configuration list for PBXNativeTarget "FantasyCricketLogin" */;
+			buildPhases = (
+				5D0291A318AF9908009BF3BF /* Sources */,
+				5D0291A418AF9908009BF3BF /* Frameworks */,
+				5D0291A518AF9908009BF3BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FantasyCricketLogin;
+			productName = FantasyCricketLogin;
+			productReference = 5D0291A718AF9908009BF3BF /* FantasyCricketLogin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5D0291CA18AF9908009BF3BF /* FantasyCricketLoginTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D0291DF18AF9908009BF3BF /* Build configuration list for PBXNativeTarget "FantasyCricketLoginTests" */;
+			buildPhases = (
+				5D0291C718AF9908009BF3BF /* Sources */,
+				5D0291C818AF9908009BF3BF /* Frameworks */,
+				5D0291C918AF9908009BF3BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D0291D118AF9908009BF3BF /* PBXTargetDependency */,
+			);
+			name = FantasyCricketLoginTests;
+			productName = FantasyCricketLoginTests;
+			productReference = 5D0291CB18AF9908009BF3BF /* FantasyCricketLoginTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5D02919F18AF9908009BF3BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FC;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Pushparaj Zala";
+				TargetAttributes = {
+					5D0291CA18AF9908009BF3BF = {
+						TestTargetID = 5D0291A618AF9908009BF3BF;
+					};
+				};
+			};
+			buildConfigurationList = 5D0291A218AF9908009BF3BF /* Build configuration list for PBXProject "FantasyCricketLogin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5D02919E18AF9908009BF3BF;
+			productRefGroup = 5D0291A818AF9908009BF3BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D0291A618AF9908009BF3BF /* FantasyCricketLogin */,
+				5D0291CA18AF9908009BF3BF /* FantasyCricketLoginTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5D0291A518AF9908009BF3BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D0291BE18AF9908009BF3BF /* Main_iPhone.storyboard in Resources */,
+				5D0291C618AF9908009BF3BF /* Images.xcassets in Resources */,
+				5D0291C118AF9908009BF3BF /* Main_iPad.storyboard in Resources */,
+				5D0291B518AF9908009BF3BF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D0291C918AF9908009BF3BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D0291D718AF9908009BF3BF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D0291A318AF9908009BF3BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D0291FB18AF9D2B009BF3BF /* OBLFacebookPost.m in Sources */,
+				5D2FA80B18B20CCB00DDAD5A /* OBLFacebookLogin.m in Sources */,
+				5D0291B718AF9908009BF3BF /* main.m in Sources */,
+				5D0291FC18AF9D2B009BF3BF /* OBLFacebookQuery.m in Sources */,
+				5D0291FA18AF9D2B009BF3BF /* OBLFacebookPermission.m in Sources */,
+				5D0291FD18AF9D2B009BF3BF /* OBLFacebookUser.m in Sources */,
+				5D2FA80F18B2202000DDAD5A /* FC_User.m in Sources */,
+				5D0291FF18AF9D2B009BF3BF /* OBLLog.m in Sources */,
+				5D0291F818AF9D2B009BF3BF /* OBLFacebookFriend.m in Sources */,
+				5D0291BB18AF9908009BF3BF /* FC_FBLoginAppDelegate.m in Sources */,
+				5D8AE37C18B33225005C1C0F /* FC_LiveScoreViewController.m in Sources */,
+				5D8AE37318B33034005C1C0F /* FC_FBLoginViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D0291C718AF9908009BF3BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D0291D918AF9908009BF3BF /* FantasyCricketLoginTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5D0291D118AF9908009BF3BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D0291A618AF9908009BF3BF /* FantasyCricketLogin */;
+			targetProxy = 5D0291D018AF9908009BF3BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5D0291B318AF9908009BF3BF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D0291B418AF9908009BF3BF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5D0291BC18AF9908009BF3BF /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D0291BD18AF9908009BF3BF /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		5D0291BF18AF9908009BF3BF /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D0291C018AF9908009BF3BF /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		5D0291D518AF9908009BF3BF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D0291D618AF9908009BF3BF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5D0291DA18AF9908009BF3BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5D0291DB18AF9908009BF3BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5D0291DD18AF9908009BF3BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/pushparajzala/Developer/FantacyCricketFBLogin/FantasyCricketLogin/Library,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FantasyCricketLogin/FantasyCricketLogin-Prefix.pch";
+				INFOPLIST_FILE = "FantasyCricketLogin/FantasyCricketLogin-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5D0291DE18AF9908009BF3BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/pushparajzala/Developer/FantacyCricketFBLogin/FantasyCricketLogin/Library,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FantasyCricketLogin/FantasyCricketLogin-Prefix.pch";
+				INFOPLIST_FILE = "FantasyCricketLogin/FantasyCricketLogin-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5D0291E018AF9908009BF3BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FantasyCricketLogin.app/FantasyCricketLogin";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FantasyCricketLogin/FantasyCricketLogin-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FantasyCricketLoginTests/FantasyCricketLoginTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		5D0291E118AF9908009BF3BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FantasyCricketLogin.app/FantasyCricketLogin";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FantasyCricketLogin/FantasyCricketLogin-Prefix.pch";
+				INFOPLIST_FILE = "FantasyCricketLoginTests/FantasyCricketLoginTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D0291A218AF9908009BF3BF /* Build configuration list for PBXProject "FantasyCricketLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D0291DA18AF9908009BF3BF /* Debug */,
+				5D0291DB18AF9908009BF3BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D0291DC18AF9908009BF3BF /* Build configuration list for PBXNativeTarget "FantasyCricketLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D0291DD18AF9908009BF3BF /* Debug */,
+				5D0291DE18AF9908009BF3BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D0291DF18AF9908009BF3BF /* Build configuration list for PBXNativeTarget "FantasyCricketLoginTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D0291E018AF9908009BF3BF /* Debug */,
+				5D0291E118AF9908009BF3BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5D02919F18AF9908009BF3BF /* Project object */;
+}
